@@ -1,0 +1,197 @@
+html{
+    background-color: #232B2B !important;
+}
+
+body{
+    background: transparent !important;
+    margin: 0;
+    padding: 0;
+}
+
+html,
+body,
+#root{
+    height: 100%;
+}
+
+.home{
+    height: 100%;
+}
+
+header{
+background-color: darkcyan;
+padding: 10px;
+margin: 0px;
+font-size: 15px;
+color: white;
+font-weight: 600;
+text-align: center;
+width: 100%;
+}
+
+.menu{
+    border-radius: 0px 10px 10px 0px;
+    margin: 10px 0px 10px 0px;
+    height: 100%;
+    box-shadow: 4px 2px 3px 1px gray;
+    background-color: #232B2B;
+    width: 8%;
+    min-width: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.menu-item{
+    color: white;
+    align-items: center;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 0px 10px 10px 0px;
+    display: flex;
+    justify-content: center;
+}
+
+.menu-item svg{
+    margin-right: 10px;
+    font-size: 16px;
+    
+}
+
+.menu .active{
+ background-color: darkcyan;
+ color: white ;
+}
+
+.menu-item > span {
+    margin-left: 10px;
+    font-size: 16px;
+}
+
+.songs{
+    justify-content: center;
+    flex-wrap: wrap;
+    display: flex;
+    padding: 10px;
+}
+
+.song{
+    margin: 10px;
+    cursor: pointer;
+    position: relative;
+    width: 170px;
+    text-align: center;
+    color: white;
+    font-size: 15px;
+}
+
+.audio-img{
+    height: 150px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+
+.play-logo{
+    position: absolute;
+    opacity: 0.5;
+    font-size: 7em;
+    left: 35px;
+    bottom: 47%;
+}
+
+.content{
+    margin-top: 20px;
+}
+
+.playlist-header{
+    font-size: 15px;
+    background-color: darkcyan;
+    border-radius: 20px;
+    margin: 10px 50px;
+    padding: 10px 20px;
+    align-items: center;
+    display: flex;
+    color: white;
+}
+
+.playlist-header>svg{
+    color: white;
+    margin: 0px 30px;
+    cursor: pointer;
+    font-size: 25px;
+    cursor: pointer;
+}
+
+.player{
+     position: fixed;
+     left: 0;
+     bottom: 0;
+     width: 100%;
+     background-color: darkcyan;
+     text-align: center;
+     color: black;
+}
+
+.player-controls{
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+}
+
+.player-controls:hover{
+    background-color: darkcyan;
+    border-radius: 15px;
+}
+
+.player .name{
+    padding-right: 15px;
+}
+
+.cursor-disabled{
+    cursor: not-allowed;
+}
+
+audio::-webkit-media-controls-panel{
+    background-color: darkcyan !important;
+
+}
+
+@media only screen and (min-width: 300px) and (max-width: 769px) {
+    .audio-img{
+        height: 125px;
+    }
+
+    .play-logo{
+        font-size: 7em;
+        top: 6px;
+        left: 16px;
+    }
+
+    .song{
+        width: 140px;
+    }
+
+    .menu-item > span {
+        display: none;
+    }
+
+    .menu-item svg{
+        font-size: 30px;
+        margin: 0px;
+        color: white;
+    }
+
+    .playlist-header{
+        font-size: 20px;
+        margin: 10px 10px;
+        padding: 10px 10px;
+    }
+
+    .playlist-header > svg{
+        margin: 0px 10px;
+    }
+
+    .songs{
+        padding-bottom: 20px;
+    }
+}
+
